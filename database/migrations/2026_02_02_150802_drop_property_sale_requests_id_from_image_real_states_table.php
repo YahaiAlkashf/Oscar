@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('image_real_states', function (Blueprint $table) {
 
+        if (Schema::hasColumn('image_real_states', 'property_sale_requests_id')) {
+        Schema::table('image_real_states', function (Blueprint $table) {
             $table->dropColumn('property_sale_requests_id');
         });
+        }
     }
 
     /**
