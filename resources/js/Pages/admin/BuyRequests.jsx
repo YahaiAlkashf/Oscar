@@ -1,0 +1,217 @@
+import React, { useState, useEffect } from "react";
+import Layout from "./Layout";
+import axios from "axios";
+import {
+    TrashIcon,
+    MagnifyingGlassIcon,
+    PhoneIcon,
+    ChatBubbleBottomCenterTextIcon,
+    ShoppingBagIcon,
+} from "@heroicons/react/24/outline";
+import { usePage } from "@inertiajs/react";
+import DeleteModel from "./Components/DeleteModel";
+
+export default function BuyRequests() {
+    const [requests, setRequests] = useState([]);
+    const [filterRequests, setFilterRequests] = useState([]);
+    const [search, setSearch] = useState("");
+    const [selectedRequest, setSelectedRequest] = useState(null);
+    const [deleteIsOpen, setDeleteIsOpen] = useState(false);
+    const { app_url } = usePage().props;
+    const [currentPage, setCurrentPage] = useState(1);
+    const rowsPerPage = 10;
+    useEffect(() => {
+        fetchRequests();
+    }, []);
+
+    const fetchRequests = async () => {
+        try {
+            const response = await axios.get(`${app_url}/buy-requests`);
+            setRequests(response.data);
+            setFilterRequests(response.data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    const handleSearch = (query) => {
+        setSearch(query);
+        setCurrentPage(1);
+        console.log("hello");
+        if (!query || query.trim() === "") {
+            setFilterRequests(requests);
+            return;
+        }
+
+        const term = query.toLowerCase();
+
+        const filtered = requests.filter((item) => {
+            const name = item.name ? String(item.name).toLowerCase() : "";
+            const phone = item.phone_number
+                ? String(item.phone_number).toLowerCase()
+                : "";
+
+            return name.includes(term) || phone.includes(term);
+        });
+
+        setFilterRequests(filtered);
+    };
+
+    const handleDelete = async () => {
+        await axios.delete(`${app_url}/buy-requests/${selectedRequest.id}`);
+        setDeleteIsOpen(false);
+        if (currentRows.length === 1 && currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+        fetchRequests();
+    };
+
+    const totalPages = Math.ceil(filterRequests.length / rowsPerPage);
+
+    const indexOfLastRow = currentPage * rowsPerPage;
+    const indexOfFirstRow = indexOfLastRow - rowsPerPage;
+    const currentRows = filterRequests.slice(indexOfFirstRow, indexOfLastRow);
+    return (
+        <Layout>
+            <div className="mx-3 bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6">
+                <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-xl font-bold dark:text-white">
+                        طلبات الشراء
+                    </h3>
+                    <div className="flex items-center w-full sm:w-auto">
+                        <input
+                            type="text"
+                            value={search}
+                            onChange={(e) => handleSearch(e.target.value)}
+                            placeholder={"بحث..."}
+                            className="flex-1 px-3 py-2 border border-gray-300 rounded-r-lg bg-white text-gray-700 dark:bg-gray-600 dark:text-gray-200 dark:border-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+                        />
+                        <button
+                            onClick={handleSearch}
+                            className="px-4 py-2 bg-primary text-white rounded-l-lg hover:bg-primary-dark transition-colors border border-primary"
+                        >
+                            {"بحث"}
+                        </button>
+                    </div>
+                </div>
+
+                <div className="overflow-x-auto">
+                    <table className="min-w-full text-right">
+                        <thead className="bg-gray-50 dark:bg-gray-700">
+                            <tr>
+                                <th className="px-4 py-3 dark:text-gray-300">
+                                    الاسم
+                                </th>
+                                <th className="px-4 py-3 dark:text-gray-300">
+                                    رقم الهاتف
+                                </th>
+                                <th className="px-4 py-3 dark:text-gray-300">
+                                    تاريخ طلب الشراء{" "}
+                                </th>
+                                <th className="px-4 py-3 text-center dark:text-gray-300">
+                                    الإجراءات
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y dark:divide-gray-700">
+                            {currentRows.map((item) => (
+                                <tr
+                                    key={item.id}
+                                    className="hover:bg-gray-50 dark:hover:bg-gray-700"
+                                >
+                                    <td className="px-4 py-3 dark:text-white">
+                                        {item.name}
+                                    </td>
+                                    <td className="px-4 py-3 dark:text-gray-300">
+                                        {item.phone_number}
+                                    </td>
+                                    <td className="px-4 py-3 dark:text-gray-300">
+                                        {new Date(
+                                            item.created_at,
+                                        ).toLocaleString("ar-EG", {
+                                            year: "numeric",
+                                            month: "numeric",
+                                            day: "numeric",
+                                            hour: "2-digit",
+                                            minute: "2-digit",
+                                            hour12: true,
+                                        })}
+                                    </td>
+                                    <td className="px-4 py-3 text-center">
+                                        <button
+                                            onClick={() => {
+                                                setSelectedRequest(item);
+                                                setDeleteIsOpen(true);
+                                            }}
+                                            className="p-2 text-red-600 hover:bg-red-50 rounded-lg"
+                                        >
+                                            <TrashIcon className="h-5 w-5" />
+                                        </button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td
+                                    colSpan="13"
+                                    className="bg-white dark:bg-gray-800"
+                                >
+                                    {filterRequests.length > rowsPerPage && (
+                                        <div className="flex justify-between items-center p-4 border-t dark:border-gray-700">
+                                            <button
+                                                onClick={() =>
+                                                    setCurrentPage(
+                                                        currentPage - 1,
+                                                    )
+                                                }
+                                                disabled={currentPage === 1}
+                                                className="px-4 py-2 bg-gray-200 text-gray-800 rounded disabled:opacity-50 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600 transition-colors"
+                                            >
+                                                السابق
+                                            </button>
+
+                                            <span className="text-gray-700 dark:text-gray-300 font-medium">
+                                                صفحة {currentPage} من{" "}
+                                                {totalPages}
+                                            </span>
+
+                                            <button
+                                                onClick={() =>
+                                                    setCurrentPage(
+                                                        currentPage + 1,
+                                                    )
+                                                }
+                                                disabled={
+                                                    currentPage === totalPages
+                                                }
+                                                className="px-4 py-2 bg-gray-200 text-gray-800 rounded disabled:opacity-50 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600 transition-colors"
+                                            >
+                                                التالي
+                                            </button>
+                                        </div>
+                                    )}
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    {currentRows.length <= 0 && (
+                        <div className="flex flex-col items-center justify-center p-10 text-gray-400">
+                            <ShoppingBagIcon className="h-12 w-12 mb-2 opacity-20" />
+                            <p className="font-bold text-lg">
+                                لا توجد طلبات حالياً
+                            </p>
+                        </div>
+                    )}
+                </div>
+                {deleteIsOpen && (
+                    <DeleteModel
+                        closeModal={() => setDeleteIsOpen(false)}
+                        onConfirm={handleDelete}
+                        itemName={selectedRequest.name}
+                    />
+                )}
+            </div>
+        </Layout>
+    );
+}

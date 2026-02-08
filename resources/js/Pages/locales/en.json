@@ -1,0 +1,661 @@
+{
+  "أعلن عن عقار": "List Property",
+  "الرئيسية": "Home",
+  "المشاريع": "Projects",
+  "الوحدات": "Units",
+  "من نحن": "About Us",
+  "تواصل معنا": "Contact Us",
+  "المفضلة": "Favorites",
+  "مرحباً بك": "Welcome",
+  "في أوسكار العقارية": "to Oscar Real Estate",
+  "عربي": "Arabic",
+  "English": "English",
+  "المظهر": "Theme",
+  "أوسكار العقارية": "Oscar Real Estate",
+    "بيع عقارك": "Sell Your Property",
+  "طلب شراء عقار": "Buy Property Request",
+  "برجاء ملء البيانات وسنتواصل معك فوراً": "Please fill in the details and we will contact you shortly",
+  "الاسم بالكامل": "Full Name",
+  "أدخل اسمك...": "Enter your name...",
+  "رقم الهاتف": "Phone Number",
+  "01xxxxxxxxx": "01xxxxxxxxx",
+  "صور العقار": "Property Photos",
+  "اضغط لرفع الصور": "Click to upload photos",
+  "إرسال الطلب": "Submit Request",
+  "تم استلام طلبك!": "Request Received!",
+  "سيتم التواصل معك قريباً من قبل فريق المبيعات المختص بـ": "Our specialized sales team will contact you soon regarding",
+  "البيع": "selling",
+  "الشراء": "buying",
+    "بيع عقارك": "Sell Your Property",
+  "لديك منزل وتريد بيعة فى اسرع وقت اضغط هنا الان": "Have a house you want to sell quickly? Click here now",
+  "اضغط للبدء": "Click to Start",
+  "استلام فوري": "Immediate Delivery",
+  "استلام فورى": "Immediate Delivery",
+  "هل تريد شراء منزلك الآن والدفع لاحقًا؟ اضغط هنا لرؤية المنازل الجاهزة للسكن فورا": "Want to buy your home now and pay later? Click here to see homes ready for immediate occupancy",
+  "استكشاف": "Explore",
+  "شراء عقار": "Buy Property",
+  "نساعدك فى شراء منزل احلامك": "We help you buy your dream home",
+  "ابدأ الان": "Start Now",
+    "الاسم مطلوب": "Name is required",
+  "البريد الإلكتروني مطلوب": "Email is required",
+  "البريد الإلكتروني غير صالح": "Invalid email address",
+  "رقم الهاتف مطلوب": "Phone number is required",
+  "حدث خطأ في الإرسال. يرجى المحاولة مرة أخرى.": "An error occurred while sending. Please try again.",
+  "تم الإرسال بنجاح!": "Sent successfully!",
+  "سنتواصل معك قريباً. شكراً لتواصلك معنا.": "We will contact you soon. Thank you for contacting us.",
+  "شعار أوسكار العقارية": "Oscar Real Estate Logo",
+  "أوسكار العقارية.. رائدون في تقديم الحلول السكنية الفاخرة.": "Oscar Real Estate.. Pioneers in providing luxurious housing solutions.",
+  "اتصل بنا": "Contact Us",
+  "القاهرة، مصر": "Cairo, Egypt",
+  "تواصل مباشر": "Direct Contact",
+  "الاسم *": "Name *",
+  "البريد الإلكتروني *": "Email *",
+  "رسالتك (اختياري)": "Your message (optional)",
+  "جاري الإرسال...": "Sending...",
+  "إرسال": "Send",
+  "جميع الحقوق محفوظة.": "All rights reserved.",
+    "عقارات فاخرة": "Luxury Real Estate",
+  "اعثر على": "Find your",
+  "منزلك المثالي": "Perfect Home",
+  "نخبة العقارات في أرقى المناطق بانتظارك": "Elite properties in the finest areas await you",
+  "للبيع": "For Sale",
+  "للايجار": "For Rent",
+  "المنطقة": "Region",
+  "اختر المنطقة": "Choose Region",
+  "تصنيف العقار": "Property Category",
+  "كل التصنيفات": "All Categories",
+  "نوع العقار": "Property Type",
+  "اختر النوع": "Choose Type",
+  "فلاتر متقدمة": "Advanced Filters",
+  "جاري البحث...": "Searching...",
+  "بحث": "Search",
+  "الغرف": "Rooms",
+  "الحمامات": "Bathrooms",
+  "أقل سعر": "Min Price",
+  "أعلى سعر": "Max Price",
+  "أقل مساحة": "Min Area",
+  "أعلى مساحة": "Max Area",
+  "استلام فوري": "Immediate Delivery",
+    "نموذج التقديم": "Application Form",
+  "نسعد بانضمامك إلينا": "We're happy to have you join us",
+  "تم إرسال طلبك": "Your request has been sent",
+  "بنجاح!": "successfully!",
+  "شكراً لاهتمامك بالانضمام إلينا. لقد استلمنا سيرتك الذاتية و": "Thank you for your interest in joining us. We have received your CV and",
+  "سنتواصل معك قريباً": "we will contact you soon",
+  "لتحديد موعد المقابلة.": "to schedule an interview.",
+  "إغلاق النافذة": "Close Window",
+  "الاسم بالكامل": "Full Name",
+  "مثال: محمد أحمد": "Example: Mohamed Ahmed",
+  "رقم الهاتف": "Phone Number",
+  "012xxxxxxxx": "012xxxxxxxx",
+  "الوظيفة المطلوبة": "Desired Position",
+  "اختر وظيفة...": "Choose a job...",
+  "السيرة الذاتية (CV)": "Curriculum Vitae (CV)",
+  "اسحب ملفك هنا أو اضغط لرفع الملف": "Drag your file here or click to upload",
+  "PDF, DOC (حد أقصى 5 ميجا)": "PDF, DOC (Max 5 MB)",
+  "تم اختيار الملف بنجاح": "File selected successfully",
+  "حذف الملف": "Delete File",
+  "إرسال الطلب الآن": "Submit Request Now",
+    "نحن نوظف الآن!": "We're Hiring Now!",
+  "انضم إلي": "Join our",
+  "فريق العمل": "Team",
+  "نحن نعمل فقط مع أفضل الشركات في جميع أنحاء العالم لإجراء الاستطلاع، ونبحث دائماً عن المبدعين لإحداث فرق حقيقي.": "We work only with the best companies worldwide to conduct surveys, and we're always looking for innovators to make a real difference.",
+  "للتقديم على وظيفة": "Apply for a Job",
+  "انضم إلى فريق العمل": "Join Our Team",
+    "تصفح العقارات حسب": "Browse Properties by",
+  "الفئة": "Category",
+  "سواء كنت تبحث عن سكن مريح أو استثمار تجاري، اختر نوع العقار المناسب لتبدأ رحلتك.": "Whether you're looking for comfortable housing or commercial investment, choose the right property type to begin your journey.",
+  "استكشف الوحدات": "Explore Units",
+    "ابحث في": "Search in",
+  "أرقى المناطق": "Finest Areas",
+  "اختر المنطقة المفضلة لديك لاستعراض العقارات المتاحة بها واكتشف وحدتك القادمة": "Choose your preferred area to browse available properties and discover your next unit",
+  "جاري تحميل المناطق...": "Loading areas...",
+  "عرض كافة العقارات في جميع المناطق": "View all properties in all areas",
+    "عقار متاح": "Available Property",
+  "كمبوند متعاقد معه": "Contracted Compound",
+  "مبنى إداري": "Administrative Building",
+  "مطور عقاري": "Real Estate Developer",
+    "جاري تحميل المشاريع...": "Loading projects...",
+  "مشاريعنا المميزة": "Our Featured Projects",
+  "اكتشف أبرز مشاريعنا العقارية التي تجمع بين الفخامة والموقع المتميز والتصميم الحديث": "Discover our most prominent real estate projects that combine luxury, prime location, and modern design",
+  "لا توجد مشاريع مميزة حالياً": "No featured projects available at the moment",
+  "سيتم إضافة مشاريع جديدة قريباً": "New projects will be added soon",
+    "جاري تحميل العقارات...": "Loading properties...",
+  "عقاراتنا المميزة": "Our Featured Properties",
+  "اكتشف مجموعة مختارة من أرقى العقارات السكنية والساحلية التي نقدمها لعملائنا": "Discover a curated selection of the finest residential and coastal properties we offer to our clients",
+  "عقارات سكنية": "Residential Properties",
+  "عقارات ساحلية": "Coastal Properties",
+  "لا توجد عقارات سكنية مميزة حالياً": "No featured residential properties available at the moment",
+  "لا توجد عقارات ساحلية مميزة حالياً": "No featured coastal properties available at the moment",
+  "سيتم إضافة عقارات جديدة قريباً": "New properties will be added soon",
+  "عرض جميع العقارات": "View All Properties",
+    "مشروع مميز": "Featured Project",
+  "بواسطة:": "By:",
+  "يبدأ السعر من": "Starting Price From",
+  "ج.م": "EGP",
+  "المساحات": "Areas",
+  "م²": "m²",
+  "المطور": "Developer",
+  "واتساب": "WhatsApp",
+  "اتصال": "Call",
+    "🚀 اكتشف هذا العقار الرائع:": "🚀 Discover this amazing property:",
+  "السعر:": "Price:",
+  "ج.م": "EGP",
+  "للبيع": "For Sale",
+  "للايجار": "For Rent",
+  "استلام فوري": "Immediate Delivery",
+  "غرف": "Rooms",
+  "م²": "m²",
+  "واتساب": "WhatsApp",
+  "اتصال": "Call",
+  "مشاركة العقار": "Share Property",
+  "واتساب": "WhatsApp",
+  "فيسبوك": "Facebook",
+  "تويتر": "Twitter",
+  "يمكنك مشاركة الرابط من خلال نسخه ولصقه في منشورات الإنستجرام": "You can share the link by copying and pasting it in Instagram posts",
+  "إنستجرام": "Instagram",
+  "لينكد إن": "LinkedIn",
+  "رابط العقار": "Property Link",
+  "تم النسخ!": "Copied!",
+  "نسخ": "Copy",
+  "إغلاق": "Close",
+    "شركة أوسكار للتسويق العقاري - شريكك الموثوق في القاهرة": "Oscar Real Estate Marketing Company - Your Trusted Partner in Cairo",
+  "اكتشف شركة أوسكار الرائدة في التسويق العقاري بالقاهرة. نقدم خدمات بيع وشراء وإيجار عقارات احترافية في أفضل مناطق مصر.": "Discover Oscar, the leading real estate marketing company in Cairo. We provide professional buying, selling, and renting services in Egypt's best areas.",
+  "شركة عقارية مصر, تسويق عقاري القاهرة, بيع عقارات, شراء عقارات, إيجار عقارات, شركة أوسكار العقارية, عقارات وسط البلد, خدمات عقارية مصر": "Real estate company Egypt, real estate marketing Cairo, property sales, property purchase, property rental, Oscar Real Estate Company, Downtown Cairo properties, real estate services Egypt",
+  "من نحن": "About Us",
+  "نقدم مجموعة شاملة من الخدمات العقارية التي تغطي جميع احتياجاتك من البيع والشراء إلى الإيجار والإدارة.": "We provide a comprehensive range of real estate services covering all your needs from buying and selling to rental and management.",
+  "سنوات خبرة": "Years Experience",
+  "عملاء راضون": "Satisfied Clients",
+  "صفقة ناجحة": "Successful Deals",
+  "رضا العملاء": "Client Satisfaction",
+  "ما هي خدمات شركة أوسكار العقارية؟": "What services does Oscar Real Estate Company provide?",
+  "نقدم خدمات التسويق العقاري، تسهيل البيع والشراء، تأجير العقارات، الاستشارات العقارية، وإدارة الممتلكات.": "We provide real estate marketing, buying and selling facilitation, property rental, real estate consultations, and property management services.",
+  "أين يقع مقر شركة أوسكار؟": "Where is Oscar Company located?",
+  "يقع مقرنا الرئيسي في 33 شارع قصر النيل - حي عابدين - وسط البلد، القاهرة، مصر.": "Our main headquarters is located at 33 Kasr El Nil Street - Abdeen District - Downtown Cairo, Egypt.",
+    "تواصل معنا - أوسكار العقارية | خدمة العملاء والدعم": "Contact Us - Oscar Real Estate | Customer Service & Support",
+  "تواصل مع فريق أوسكار العقارية للاستفسارات والعروض. اتصل بنا عبر الهاتف أو البريد الإلكتروني أو قم بزيارة مقرنا في القاهرة.": "Contact the Oscar Real Estate team for inquiries and offers. Call us by phone or email, or visit our headquarters in Cairo.",
+  "اتصال عقاري مصر, تواصل مع شركة عقارية, استفسارات عقارية, دعم عملاء عقاري, مقر أوسكار العقارية, أرقام هواتف عقارية, استشارات عقارية مجانية": "Real estate contact Egypt, contact real estate company, real estate inquiries, real estate customer support, Oscar Real Estate headquarters, real estate phone numbers, free real estate consultations",
+  "تواصل معنا": "Contact Us",
+  "تواصل مع أوسكار العقارية - فريق دعم العملاء": "Contact Oscar Real Estate - Customer Support Team",
+  "تواصل مع أوسكار العقارية - خدمة العملاء 24/7": "Contact Oscar Real Estate - 24/7 Customer Service",
+  "اتصل بنا للحصول على استشارات عقارية مجانية ومساعدة في البحث عن العقار المناسب لك.": "Call us for free real estate consultations and help finding the right property for you.",
+  "تواصل مع أوسكار العقارية": "Contact Oscar Real Estate",
+  "صفحة التواصل مع فريق أوسكار العقارية للاستفسارات والاستشارات العقارية": "Contact page for the Oscar Real Estate team for inquiries and real estate consultations",
+  "الرسالة مطلوبة": "Message is required",
+  "مثال: محمد أحمد": "Example: Mohamed Ahmed",
+  "كيف يمكننا مساعدتك؟": "How can we help you?",
+  "أسئلة شائعة": "Frequently Asked Questions",
+  "ما هي أوقات العمل؟": "What are the working hours?",
+  "من السبت إلى الخميس، 9 صباحاً حتى 9 مساءً": "From Saturday to Thursday, 9 AM to 9 PM",
+  "هل تقدمون استشارات مجانية؟": "Do you offer free consultations?",
+  "نعم، نقدم استشارات عقارية مجانية أولية": "Yes, we offer preliminary free real estate consultations",
+  "موقعنا على الخريطة": "Our Location on Map",
+  "مقر الشركة: القاهرة، التجمع الخامس": "Company Headquarters: Cairo, Fifth Settlement",
+    "العقارات المفضلة - قائمة عقاراتي المحفوظة | أوسكار العقارية": "Favorite Properties - My Saved Properties List | Oscar Real Estate",
+  "عرض وإدارة العقارات المفضلة لديك. قم بمقارنة وتصفية وتنظيم العقارات المحفوظة لاتخاذ القرار المناسب.": "View and manage your favorite properties. Compare, filter, and organize saved properties to make the right decision.",
+  "عقارات مفضلة, عقارات محفوظة, قائمة عقاراتي, مقارنة عقارات, عقارات مصر المفضلة, عقارات للبيع مفضلة, عقارات للإيجار مفضلة": "favorite properties, saved properties, my property list, property comparison, Egypt favorite properties, favorite properties for sale, favorite properties for rent",
+  "قائمة عقاراتي المفضلة - أوسكار العقارية": "My Favorite Properties List - Oscar Real Estate",
+  "ادخل إلى قائمة عقاراتك المفضلة، قم بمقارنتها وتصفيتها لاتخاذ أفضل قرار شراء أو إيجار.": "Access your favorite properties list, compare and filter them to make the best buying or renting decision.",
+  "عرض عقاراتي المفضلة - أوسكار العقارية": "View My Favorite Properties - Oscar Real Estate",
+  "قائمة العقارات المحفوظة والمفضلة لديك. قارن واختر العقار المناسب.": "List of your saved and favorite properties. Compare and choose the right property.",
+  "قائمة العقارات المفضلة": "Favorite Properties List",
+  "قائمة العقارات التي حفظها المستخدم كمفضلة على موقع أوسكار العقارية": "List of properties saved by the user as favorites on Oscar Real Estate website",
+  "عقار": "Property",
+  "عقار في قائمة المفضلة": "Property in favorites list",
+  "جاري تحميل العقارات المفضلة...": "Loading favorite properties...",
+  "عرض وإدارة العقارات التي حفظتها كمفضلة": "View and manage properties you have saved as favorites",
+  "تم العثور على": "Found",
+  "وحدة": "unit",
+  "تصدير": "Export",
+  "حذف الكل": "Delete All",
+  "تصفية وترتيب": "Filter and Sort",
+  "كل الأنواع": "All Types",
+  "كل الأسعار": "All Prices",
+  "أقل من مليون": "Under 1 Million",
+  "١-٣ مليون": "1-3 Million",
+  "أكثر من ٣ مليون": "Over 3 Million",
+  "الأحدث أولاً": "Newest First",
+  "السعر: منخفض إلى مرتفع": "Price: Low to High",
+  "السعر: مرتفع إلى منخفض": "Price: High to Low",
+  "المساحة: من كبير إلى صغير": "Area: Large to Small",
+  "إعادة تعيين": "Reset",
+  "عرض": "Showing",
+  "من": "of",
+  "عقار بعد التصفية": "properties after filtering",
+  "لا توجد عقارات مفضلة": "No Favorite Properties",
+  "لم تقم بإضافة أي عقارات إلى قائمة المفضلة بعد. ابدأ بتصفح العقارات واضغط على زر القلب لإضافتها إلى هنا.": "You haven't added any properties to your favorites list yet. Start browsing properties and click the heart button to add them here.",
+  "تصفح العقارات": "Browse Properties",
+  "لا توجد نتائج": "No Results Found",
+  "لا توجد عقارات تطابق معايير التصفية المحددة.": "No properties match the specified filter criteria.",
+  "عرض جميع العقارات": "Show All Properties",
+  "حذف من المفضلة": "Remove from Favorites",
+  "ملخص العقارات المفضلة": "Favorite Properties Summary",
+  "إجمالي العقارات": "Total Properties",
+  "عقارات للبيع": "Properties for Sale",
+  "عقارات للإيجار": "Properties for Rent",
+  "متوسط السعر": "Average Price",
+  "هل تريد حذف جميع العقارات المفضلة؟": "Do you want to delete all favorite properties?",
+    "أوسكار العقارية | الرائدة في سوق العقارات المصري - بيع وشراء وإيجار": "Oscar Real Estate | Leader in Egyptian Real Estate Market - Buy, Sell, Rent",
+  "اكتشف أفضل العقارات في مصر مع أوسكار العقارية. عقارات للبيع والشراء والإيجار في أفضل مناطق القاهرة والجيزة. تصفح آلاف الوحدات السكنية والتجارية.": "Discover the best properties in Egypt with Oscar Real Estate. Properties for sale, purchase, and rent in the best areas of Cairo and Giza. Browse thousands of residential and commercial units.",
+  "عقارات مصر, عقارات للبيع في القاهرة, عقارات للإيجار في الجيزة, شركة عقارية مصرية, أوسكار العقارية, شقق للبيع, فلل للبيع, مكاتب للإيجار, عقارات التجمع الخامس, عقارات الشيخ زايد": "Egypt properties, properties for sale in Cairo, properties for rent in Giza, Egyptian real estate company, Oscar Real Estate, apartments for sale, villas for sale, offices for rent, Fifth Settlement properties, Sheikh Zayed properties",
+  "أوسكار العقارية - شريكك الموثوق في سوق العقارات المصري": "Oscar Real Estate - Your Trusted Partner in Egyptian Real Estate Market",
+  "نقدم لك أفضل الخدمات العقارية في مصر. تصفح آلاف العقارات المميزة للبيع والإيجار في أفضل المناطق.": "We provide you with the best real estate services in Egypt. Browse thousands of distinguished properties for sale and rent in the best areas.",
+  "أوسكار العقارية | بيع وشراء وإيجار العقارات في مصر": "Oscar Real Estate | Buying, Selling, and Renting Properties in Egypt",
+  "اكتشف آلاف العقارات المميزة في مصر. فلل، شقق، مكاتب، محلات للبيع والإيجار.": "Discover thousands of distinguished properties in Egypt. Villas, apartments, offices, shops for sale and rent.",
+  "شركة رائدة في مجال التسويق العقاري في مصر، متخصصة في بيع وشراء وإيجار العقارات السكنية والتجارية.": "A leading company in real estate marketing in Egypt, specialized in buying, selling, and renting residential and commercial properties.",
+  "خدمات بيع العقارات": "Property Sales Services",
+  "خدمات تأجير العقارات": "Property Rental Services",
+  "استشارات عقارية": "Real Estate Consultations",
+  "عميل راضٍ": "Satisfied Client",
+  "سنة خبرة": "Years Experience",
+  "لماذا تختار أوسكار العقارية؟": "Why Choose Oscar Real Estate?",
+  "خبرة ١٠ سنوات": "10 Years Experience",
+  "أكثر من عقد من الخبرة في سوق العقارات المصري": "Over a decade of experience in the Egyptian real estate market",
+  "معاملات آمنة": "Secure Transactions",
+  "ضمان معاملات آمنة وشفافة مع فريق قانوني متخصص": "Guarantee of secure and transparent transactions with a specialized legal team",
+  "دعم ٢٤/٧": "24/7 Support",
+  "فريق دعم متاح على مدار الساعة للرد على استفساراتك": "Support team available around the clock to answer your inquiries",
+  "جاهز لإيجاد عقار أحلامك؟": "Ready to Find Your Dream Property?",
+  "انضم إلى آلاف العملاء الراضين الذين وجدوا منازلهم ومكاتبهم ومحلاتهم التجارية مع أوسكار": "Join thousands of satisfied clients who found their homes, offices, and shops with Oscar",
+  "تصفح جميع العقارات": "Browse All Properties",
+  "تواصل مع مستشار عقاري": "Contact a Real Estate Consultant",
+    "مشاريع عقارية للبيع في مصر | أوسكار للتسويق العقاري - أفضل المشاريع الجديدة": "Real Estate Projects for Sale in Egypt | Oscar Real Estate Marketing - Best New Projects",
+  "اكتشف أحدث المشاريع العقارية في مصر مع أوسكار للتسويق العقاري. مشاريع سكنية وتجارية وساحلية من أفضل المطورين العقاريين. تصفح واسع وتصفية حسب الموقع والميزانية.": "Discover the latest real estate projects in Egypt with Oscar Real Estate Marketing. Residential, commercial, and coastal projects from the best real estate developers. Extensive browsing and filtering by location and budget.",
+  "مشاريع عقارية مصر, مشاريع جديدة للبيع, عقارات التطوير العقاري, مشاريع سكنية القاهرة, مشاريع تجارية الجيزة, أوسكار للتسويق العقاري, عقارات المطورين, مشاريع تحت الإنشاء": "Egypt real estate projects, new projects for sale, real estate development properties, Cairo residential projects, Giza commercial projects, Oscar Real Estate Marketing, developer properties, under construction projects",
+  "أضخم المشاريع العقارية في مصر - أوسكار للتسويق العقاري": "Largest Real Estate Projects in Egypt - Oscar Real Estate Marketing",
+  "استكشف أفضل المشاريع العقارية الجديدة في مصر. سكني، تجاري، ساحلي من كبار المطورين العقاريين مع ضمان الجودة والاستثمار الآمن.": "Explore the best new real estate projects in Egypt. Residential, commercial, coastal from top real estate developers with quality guarantee and safe investment.",
+  "مشاريع عقارية استثمارية في مصر | أوسكار للتسويق العقاري": "Investment Real Estate Projects in Egypt | Oscar Real Estate Marketing",
+  "اكتشف فرص استثمارية حقيقية في أحدث المشاريع العقارية المصرية. عروض خاصة وتسهيلات في السداد.": "Discover real investment opportunities in the latest Egyptian real estate projects. Special offers and payment facilities.",
+  "المشاريع العقارية - أوسكار للتسويق العقاري": "Real Estate Projects - Oscar Real Estate Marketing",
+  "صفحة عرض المشاريع العقارية الجديدة في مصر من شركة أوسكار للتسويق العقاري": "Page displaying new real estate projects in Egypt from Oscar Real Estate Marketing Company",
+  "الرئيسية": "Home",
+  "المشاريع العقارية": "Real Estate Projects",
+  "أوسكار للتسويق العقاري": "Oscar Real Estate Marketing",
+  "استكشف": "Explore",
+  "أضخم المشاريع": "Largest Projects",
+  "اكتشف الوجهات الاستثمارية والسكنية الجديدة مع أوسكار العقارية": "Discover new investment and residential destinations with Oscar Real Estate",
+  "تم العثور على": "Found",
+  "مشروع": "project",
+  "تصفية المشاريع": "Filter Projects",
+  "إعادة التعيين": "Reset",
+  "المطور العقاري": "Real Estate Developer",
+  "جميع المطورين": "All Developers",
+  "الفئة": "Category",
+  "كل التصنيفات": "All Categories",
+  "الموقع": "Location",
+  "كل المناطق": "All Areas",
+  "نوع المشروع": "Project Type",
+  "كل الأنواع": "All Types",
+  "سكني": "Residential",
+  "ساحلي": "Coastal",
+  "طريقة الدفع": "Payment Method",
+  "كل الطرق": "All Methods",
+  "كاش": "Cash",
+  "تقسيط": "Installments",
+  "كاش وتقسيط": "Cash and Installments",
+  "ميزانية المشروع (ج.م)": "Project Budget (EGP)",
+  "السعر الأدنى": "Minimum Price",
+  "السعر الأقصى": "Maximum Price",
+  "المساحات المتوفرة (م²)": "Available Areas (m²)",
+  "أصغر مساحة": "Smallest Area",
+  "أكبر مساحة": "Largest Area",
+  "مشاريع مميزة فقط": "Featured Projects Only",
+  "لا توجد مشاريع تطابق بحثك": "No projects match your search",
+  "حاول تعديل خيارات البحث أو المطور العقاري للوصول لنتائج أفضل.": "Try adjusting search options or the real estate developer to get better results.",
+  "مشروع عقاري في مصر": "Real estate project in Egypt",
+  "مطور عقاري": "Real estate developer",
+  "مشروع عقاري": "Real estate project",
+  "أوسكار للتسويق العقاري": "Oscar Real Estate Marketing",
+  "غير محدد": "Not specified",
+  "سكني": "Residential",
+  "ساحلي": "Coastal",
+  "كاش": "Cash",
+  "تقسيط": "Installments",
+  "كاش وتقسيط": "Cash and installments",
+  "صورة": "image",
+  "مشروع مميز": "Featured Project",
+  "تفاصيل المشروع": "Project Details",
+  "يبدأ السعر من": "Price starts from",
+  "ج.م": "EGP",
+  "يصل السعر إلى": "Price goes up to",
+  "أقل مساحة": "Smallest area",
+  "م²": "m²",
+  "أكبر مساحة": "Largest area",
+  "المطور العقاري": "Real estate developer",
+  "طريقة الدفع": "Payment method",
+  "تاريخ التسليم": "Delivery date",
+  "الفئة": "Category",
+  "نوع المشروع": "Project type",
+  "وصف المشروع": "Project description",
+  "لا يوجد وصف تفصيلي لهذا المشروع.": "No detailed description available for this project.",
+  "الوحدات المتاحة داخل المشروع": "Available units within the project",
+  "وحدة": "unit",
+  "اتصل الآن": "Call now",
+  "واتساب": "WhatsApp",
+  "مراسلة عبر الإيميل": "Contact via email",
+  "معلومات الاتصال": "Contact information",
+  "البريد الإلكتروني:": "Email:",
+  "غير متوفر": "Not available",
+  "رقم الهاتف:": "Phone number:",
+  "الموقع:": "Location:",
+  "معرض الصور": "Photo gallery",
+  "صورة إضافية": "additional image",
+    "عقارات للبيع وللايجار في مصر | أوسكار للتسويق العقاري - أفضل العروض": "Properties for Sale and Rent in Egypt | Oscar Real Estate Marketing - Best Offers",
+  "اكتشف أرقى العقارات في مصر مع أوسكار للتسويق العقاري. شقق، فلل، مكاتب، محلات للبيع وللايجار في جميع أنحاء القاهرة والجيزة. تصفية متقدمة حسب السعر والموقع والمساحة.": "Discover the finest properties in Egypt with Oscar Real Estate Marketing. Apartments, villas, offices, shops for sale and rent throughout Cairo and Giza. Advanced filtering by price, location, and area.",
+  "عقارات للبيع مصر, عقارات للإيجار القاهرة, شقق للبيع الجيزة, فلل للإيجار مصر, مكاتب تجارية للبيع, محلات للايجار, أوسكار للتسويق العقاري, عقارات مصر 2024": "Properties for sale Egypt, properties for rent Cairo, apartments for sale Giza, villas for rent Egypt, commercial offices for sale, shops for rent, Oscar Real Estate Marketing, Egypt properties 2024",
+  "عقارات مصر | أوسكار للتسويق العقاري - أكبر سوق عقاري": "Egypt Properties | Oscar Real Estate Marketing - Largest Real Estate Market",
+  "تصفح آلاف العقارات المميزة للبيع وللايجار في مصر. تصفية ذكية ونتائج دقيقة مع أوسكار للتسويق العقاري.": "Browse thousands of premium properties for sale and rent in Egypt. Smart filtering and accurate results with Oscar Real Estate Marketing.",
+  "عقارات للبيع وللايجار | أوسكار للتسويق العقاري": "Properties for Sale and Rent | Oscar Real Estate Marketing",
+  "ابحث عن عقار أحلامك مع أوسكار للتسويق العقاري. آلاف العروض المميزة في جميع أنحاء مصر.": "Search for your dream property with Oscar Real Estate Marketing. Thousands of premium offers throughout Egypt.",
+  "بحث العقارات - أوسكار للتسويق العقاري": "Property Search - Oscar Real Estate Marketing",
+  "صفحة البحث المتقدم للعقارات في مصر من شركة أوسكار للتسويق العقاري": "Advanced property search page in Egypt by Oscar Real Estate Marketing Company",
+  "الرئيسية": "Home",
+  "العقارات": "Properties",
+  "أوسكار للتسويق العقاري": "Oscar Real Estate Marketing",
+  "اكتشف": "Discover",
+  "أرقى العقارات": "Finest Properties",
+  "تصفح نتائج البحث المخصصة لك في أوسكار العقارية": "Browse personalized search results at Oscar Real Estate",
+  "تم العثور على": "Found",
+  "وحدة": "unit",
+  "تعديل الفلاتر": "Adjust Filters",
+  "للبيع": "For Sale",
+  "للايجار": "For Rent",
+  "المنطقة / الموقع": "Area / Location",
+  "كل المناطق": "All Areas",
+  "نوع الوحدة": "Unit Type",
+  "كل الأنواع": "All Types",
+  "تصنيف العقار": "Property Category",
+  "كل التصنيفات": "All Categories",
+  "نطاق السعر (ج.م)": "Price Range (EGP)",
+  "من": "From",
+  "إلى": "To",
+  "المساحة (م²)": "Area (m²)",
+  "الغرف": "Rooms",
+  "الحمامات": "Bathrooms",
+  "استلام فوري": "Immediate Delivery",
+  "إعادة تعيين كافة الفلاتر": "Reset All Filters",
+  "لم نجد أي تطابق!": "No matches found!",
+  "جرب تغيير نطاق السعر أو البحث في منطقة أخرى، نحن متأكدون أن منزلك القادم هنا.": "Try changing the price range or searching in another area, we're sure your future home is here.",
+    "أوسكار للتسويق العقاري": "Oscar Real Estate Marketing",
+  "مشروع": "Project",
+  "|": "|",
+  "مصر": "Egypt",
+  "اكتشف مشروع": "Discover project",
+  "مع أوسكار للتسويق العقاري. يبدأ السعر من": "with Oscar Real Estate Marketing. Prices start from",
+  "ج.م، مساحات من": "EGP, areas from",
+  "إلى": "to",
+  "م²،": "m²,",
+  "مطور:": "Developer:",
+  "المطور العقاري": "Real estate developer",
+  "عقارات للبيع في": "Properties for sale in",
+  "مشاريع سكنية مصر": "Residential projects Egypt",
+  "عقارات": "Properties",
+  "استثمر في": "Invest in",
+  "أسعار تنافسية ومساحات متنوعة.": "Competitive prices and diverse areas.",
+  "مشروع عقاري استثماري": "Real estate investment project",
+  "فرصة استثمارية في مشروع": "Investment opportunity in project",
+  "من": "by",
+  "في": "in",
+  "مشروع عقاري في مصر": "Real estate project in Egypt",
+  "مطور عقاري": "Real estate developer",
+  "غير محدد": "Not specified",
+  "سكني": "Residential",
+  "ساحلي": "Coastal",
+  "كاش": "Cash",
+  "تقسيط": "Installments",
+  "كاش وتقسيط": "Cash and installments",
+  "صورة": "image",
+  "مشروع مميز": "Featured Project",
+  "تفاصيل المشروع": "Project Details",
+  "يبدأ السعر من": "Price starts from",
+  "ج.م": "EGP",
+  "يصل السعر إلى": "Price goes up to",
+  "أقل مساحة": "Smallest area",
+  "م²": "m²",
+  "أكبر مساحة": "Largest area",
+  "المطور العقاري": "Real estate developer",
+  "طريقة الدفع": "Payment method",
+  "تاريخ التسليم": "Delivery date",
+  "الفئة": "Category",
+  "نوع المشروع": "Project type",
+  "وصف المشروع": "Project description",
+  "لا يوجد وصف تفصيلي لهذا المشروع.": "No detailed description available for this project.",
+  "الوحدات المتاحة داخل المشروع": "Available units within the project",
+  "وحدة": "unit",
+  "اتصل الآن": "Call now",
+  "واتساب": "WhatsApp",
+  "مراسلة عبر الإيميل": "Contact via email",
+  "معلومات الاتصال": "Contact information",
+  "البريد الإلكتروني:": "Email:",
+  "غير متوفر": "Not available",
+  "رقم الهاتف:": "Phone number:",
+  "الموقع:": "Location:",
+  "معرض الصور": "Photo gallery",
+  "صورة إضافية": "additional image",
+    "أوسكار للتسويق العقاري": "Oscar Real Estate Marketing",
+  "مشروع": "Project",
+  "|": "|",
+  "مصر": "Egypt",
+  "اكتشف مشروع": "Discover project",
+  "مع أوسكار للتسويق العقاري. يبدأ السعر من": "with Oscar Real Estate Marketing. Prices start from",
+  "ج.م، مساحات من": "EGP, areas from",
+  "إلى": "to",
+  "م²،": "m²,",
+  "مطور:": "Developer:",
+  "المطور العقاري": "Real estate developer",
+  "عقارات للبيع في": "Properties for sale in",
+  "مشاريع سكنية مصر": "Residential projects Egypt",
+  "عقارات": "Properties",
+  "استثمر في": "Invest in",
+  "أسعار تنافسية ومساحات متنوعة.": "Competitive prices and diverse areas.",
+  "مشروع عقاري استثماري": "Real estate investment project",
+  "فرصة استثمارية في مشروع": "Investment opportunity in project",
+  "من": "by",
+  "في": "in",
+  "مشروع عقاري في مصر": "Real estate project in Egypt",
+  "مطور عقاري": "Real estate developer",
+  "غير محدد": "Not specified",
+  "سكني": "Residential",
+  "ساحلي": "Coastal",
+  "كاش": "Cash",
+  "تقسيط": "Installments",
+  "كاش وتقسيط": "Cash and installments",
+  "صورة": "image",
+  "مشروع مميز": "Featured Project",
+  "تفاصيل المشروع": "Project Details",
+  "يبدأ السعر من": "Price starts from",
+  "ج.م": "EGP",
+  "يصل السعر إلى": "Price goes up to",
+  "أقل مساحة": "Smallest area",
+  "م²": "m²",
+  "أكبر مساحة": "Largest area",
+  "المطور العقاري": "Real estate developer",
+  "طريقة الدفع": "Payment method",
+  "تاريخ التسليم": "Delivery date",
+  "الفئة": "Category",
+  "نوع المشروع": "Project type",
+  "وصف المشروع": "Project description",
+  "لا يوجد وصف تفصيلي لهذا المشروع.": "No detailed description available for this project.",
+  "الوحدات المتاحة داخل المشروع": "Available units within the project",
+  "وحدة": "unit",
+  "اتصل الآن": "Call now",
+  "واتساب": "WhatsApp",
+  "مراسلة عبر الإيميل": "Contact via email",
+  "معلومات الاتصال": "Contact information",
+  "البريد الإلكتروني:": "Email:",
+  "غير متوفر": "Not available",
+  "رقم الهاتف:": "Phone number:",
+  "الموقع:": "Location:",
+  "معرض الصور": "Photo gallery",
+  "صورة إضافية": "additional image",
+    "أوسكار للتسويق العقاري": "Oscar Real Estate Marketing",
+  "وكيل عقاري": "Real estate agent",
+  "عقار": "property",
+  "غير محدد": "Not specified",
+  "سكني": "Residential",
+  "ساحلي": "Coastal",
+  "بيع": "sale",
+  "إيجار": "rent",
+  "كود:": "Code:",
+  "مميز": "Featured",
+  "الوكيل:": "Agent:",
+  "تفاصيل العقار": "Property Details",
+  "السعر المطلوب": "Requested Price",
+  "ج.م": "EGP",
+  "المساحة الإجمالية": "Total Area",
+  "متر مربع": "square meters",
+  "عدد الغرف": "Number of Rooms",
+  "غرف": "rooms",
+  "عدد الحمامات": "Number of Bathrooms",
+  "حمامات": "bathrooms",
+  "نوع التشطيب": "Finishing Type",
+  "الإطلالة (View)": "View",
+  "الغرض": "Purpose",
+  "حالة التسليم": "Delivery Status",
+  "فوري": "Immediate",
+  "الفئة": "Category",
+  "المشروع": "Project",
+  "الوصف التفصيلي": "Detailed Description",
+  "لا يوجد وصف مفصل لهذا العقار.": "No detailed description available for this property.",
+  "مميزات العقار": "Property Features",
+  "الوكيل العقاري": "Real Estate Agent",
+  "اتصل الآن": "Call Now",
+  "واتساب": "WhatsApp",
+  "مراسلة عبر الإيميل": "Contact via Email",
+  "معلومات الاتصال": "Contact Information",
+  "البريد الإلكتروني:": "Email:",
+  "غير متوفر": "Not available",
+  "رقم الهاتف:": "Phone Number:",
+  "معرض الصور": "Photo Gallery",
+    "التسويق العقاري": "Real Estate Marketing",
+  "نعرض العقارات بطريقة احترافية تجذب المشترين والمستأجرين المستهدفين.": "We professionally showcase properties to attract targeted buyers and tenants.",
+  "تسهيل البيع والشراء": "Facilitating Buying and Selling",
+  "دعم واستشارات شاملة في كل مرحلة من مراحل الصفقة لضمان أفضل قرار.": "Comprehensive support and consultations at every stage of the transaction to ensure the best decision.",
+  "تأجير العقارات": "Property Rental",
+  "خيارات متنوعة للسكن أو الاستخدام التجاري في أرقى مناطق وسط البلد.": "Diverse options for residential or commercial use in the finest areas of Downtown.",
+  "شركة أوسكار للتسويق العقاري - شريكك الموثوق في القاهرة": "Oscar Real Estate Marketing - Your Trusted Partner in Cairo",
+  "اكتشف شركة أوسكار الرائدة في التسويق العقاري بالقاهرة. نقدم خدمات بيع وشراء وإيجار عقارات احترافية في أفضل مناطق مصر.": "Discover Oscar, the leading real estate marketing company in Cairo. We provide professional property buying, selling, and rental services in Egypt's finest areas.",
+  "شركة عقارية مصر, تسويق عقاري القاهرة, بيع عقارات, شراء عقارات, إيجار عقارات, شركة أوسكار العقارية, عقارات وسط البلد, خدمات عقارية مصر": "Real estate company Egypt, real estate marketing Cairo, property selling, property buying, property rental, Oscar real estate company, Downtown properties, real estate services Egypt",
+  "شركة أوسكار للتسويق العقاري": "Oscar Real Estate Marketing Company",
+  "نحن شريكك الموثوق في قلب القاهرة، نقدم خدمات عقارية احترافية وشفافة تلبي طموحاتك في البيع والشراء والإيجار.": "We are your trusted partner in the heart of Cairo, providing professional and transparent real estate services that meet your aspirations in buying, selling, and renting.",
+  "اكتشف شركة أوسكار الرائدة في التسويق العقاري بالقاهرة. خدمات عقارية احترافية في أفضل مناطق مصر.": "Discover Oscar, the leading real estate marketing company in Cairo. Professional real estate services in Egypt's best areas.",
+  "شركة أوسكار للتسويق العقاري": "Oscar Real Estate Marketing Company",
+  "شركة رائدة في مجال التسويق العقاري في القاهرة، مصر. نقدم خدمات بيع وشراء وإيجار العقارات في أفضل المناطق.": "A leading company in real estate marketing in Cairo, Egypt. We provide buying, selling, and rental services for properties in the best areas.",
+  "33 شارع قصر النيل - حي عابدين - وسط البلد": "33 Qasr El Nil Street - Abdeen District - Downtown",
+  "شركة": "Company",
+  "أوسكار": "Oscar",
+  "للتسويق العقاري": "for Real Estate Marketing",
+  "نحن شريكك الموثوق في قلب القاهرة، نقدم خدمات عقارية احترافية وشفافة تلبي طموحاتك في البيع والشراء والإيجار.": "We are your trusted partner in the heart of Cairo, providing professional and transparent real estate services that meet your aspirations in buying, selling, and renting.",
+  "رؤيتنا وهدفنا": "Our Vision and Goal",
+  "تهدف أوسكار إلى تقديم خدمات عقارية بشكل احترافي وشفاف تماماً، هدفنا الأسمى هو كسب رضا العملاء وتسهيل تعاملاتهم المعقدة في السوق العقاري المصري.": "Oscar aims to provide real estate services professionally and with complete transparency. Our ultimate goal is to earn customer satisfaction and facilitate their complex transactions in the Egyptian real estate market.",
+  "خبراء العقارات": "Real Estate Experts",
+  "نضم فريقاً متخصصاً من خبراء العقارات الذين يقدمون مشورة دقيقة تناسب احتياجاتك الخاصة، مما يساعدك على اتخاذ القرار الصحيح في الوقت المناسب.": "We have a specialized team of real estate experts who provide accurate advice tailored to your specific needs, helping you make the right decision at the right time.",
+  "خدماتنا المتميزة": "Our Distinguished Services",
+  "نقدم مجموعة شاملة من الخدمات العقارية التي تغطي جميع احتياجاتك من البيع والشراء إلى الإيجار والإدارة.": "We offer a comprehensive range of real estate services covering all your needs from buying and selling to rental and management.",
+  "أين تجدنا؟": "Where to Find Us?",
+  "مقر الشركه الرئيسي 33 شارع قصر النيل - حي عابدين - وسط البلد": "Main company headquarters: 33 Qasr El Nil Street - Abdeen District - Downtown",
+  "تواصل معنا الآن": "Contact Us Now",
+    "تواصل معنا - أوسكار العقارية | خدمة العملاء والدعم": "Contact Us - Oscar Real Estate | Customer Service & Support",
+  "تواصل مع فريق أوسكار العقارية للاستفسارات والعروض. اتصل بنا عبر الهاتف أو البريد الإلكتروني أو قم بزيارة مقرنا في القاهرة.": "Contact the Oscar Real Estate team for inquiries and offers. Call us via phone or email or visit our headquarters in Cairo.",
+  "اتصال عقاري مصر, تواصل مع شركة عقارية, استفسارات عقارية, دعم عملاء عقاري, مقر أوسكار العقارية, أرقام هواتف عقارية, استشارات عقارية مجانية": "Real estate contact Egypt, contact real estate company, real estate inquiries, real estate customer support, Oscar real estate headquarters, real estate phone numbers, free real estate consultations",
+  "تواصل مع أوسكار العقارية - فريق دعم العملاء": "Contact Oscar Real Estate - Customer Support Team",
+  "سواء كنت تبحث عن منزل أحلامك أو تريد استشارة استثمارية، فريقنا المتخصص جاهز للرد على جميع استفساراتك.": "Whether you're looking for your dream home or need investment advice, our specialized team is ready to answer all your inquiries.",
+  "تواصل مع أوسكار العقارية - خدمة العملاء 24/7": "Contact Oscar Real Estate - 24/7 Customer Service",
+  "اتصل بنا للحصول على استشارات عقارية مجانية ومساعدة في البحث عن العقار المناسب لك.": "Contact us for free real estate consultations and assistance in finding the right property for you.",
+  "تواصل مع أوسكار العقارية": "Contact Oscar Real Estate",
+  "صفحة التواصل مع فريق أوسكار العقارية للاستفسارات والاستشارات العقارية": "Contact page for the Oscar Real Estate team for inquiries and real estate consultations",
+  "شركة أوسكار للتسويق العقاري": "Oscar Real Estate Marketing Company",
+  "شارع التسعين الشمالي، مبنى 45": "90th North Street, Building 45",
+  "الاسم مطلوب": "Name is required",
+  "البريد الإلكتروني مطلوب": "Email is required",
+  "البريد الإلكتروني غير صالح": "Email is invalid",
+  "رقم الهاتف مطلوب": "Phone number is required",
+  "الرسالة مطلوبة": "Message is required",
+  "حدث خطأ في الإرسال. يرجى المحاولة مرة أخرى.": "An error occurred during sending. Please try again.",
+  "نحن هنا": "We're Here",
+  "لمساعدتك": "to Help You",
+  "سواء كنت تبحث عن منزل أحلامك أو تريد استشارة استثمارية، فريقنا المتخصص جاهز للرد على جميع استفساراتك.": "Whether you're looking for your dream home or need investment advice, our specialized team is ready to answer all your inquiries.",
+  "تم الإرسال بنجاح!": "Successfully Sent!",
+  "سنتواصل معك في أقرب وقت ممكن. شكراً لتواصلك معنا.": "We will contact you as soon as possible. Thank you for contacting us.",
+  "أرسل رسالة مباشرة": "Send Direct Message",
+  "سنتواصل معك في أقرب وقت ممكن": "We will contact you as soon as possible",
+  "الاسم بالكامل *": "Full Name *",
+  "مثال: محمد أحمد": "Example: Mohamed Ahmed",
+  "البريد الإلكتروني *": "Email Address *",
+  "رقم الهاتف *": "Phone Number *",
+  "محتوى الرسالة *": "Message Content *",
+  "كيف يمكننا مساعدتك؟": "How can we help you?",
+  "جاري الإرسال...": "Sending...",
+  "إرسال الرسالة الآن": "Send Message Now",
+  "اتصل بنا": "Call Us",
+  "متاحون من 9 صباحاً - 9 مساءً": "Available from 9 AM - 9 PM",
+  "البريد الإلكتروني": "Email",
+  "نرد خلال 24 ساعة": "We reply within 24 hours",
+  "المقر الرئيسي": "Headquarters",
+  "القاهرة، التجمع الخامس": "Cairo, Fifth Settlement",
+  "شارع التسعين الشمالي، مبنى 45": "90th North Street, Building 45",
+  "أسئلة شائعة": "Frequently Asked Questions",
+  "ما هي أوقات العمل؟": "What are the working hours?",
+  "من السبت إلى الخميس، 9 صباحاً حتى 9 مساءً": "From Saturday to Thursday, 9 AM until 9 PM",
+  "هل تقدمون استشارات مجانية؟": "Do you offer free consultations?",
+  "نعم، نقدم استشارات عقارية مجانية أولية": "Yes, we offer initial free real estate consultations",
+  "موقعنا على الخريطة": "Our Location on Map",
+  "مقر الشركة: القاهرة، التجمع الخامس": "Company Headquarters: Cairo, Fifth Settlement",
+  "شارع التسعين الشمالي، مبنى 45": "90th North Street, Building 45",
+    "جاري الحفظ...": "Saving...",
+      "عرض جميع المشاريع": "View All Projects",
+        "أوسكار للتسويق العقاري.. رائدون في تقديم الحلول السكنية الفاخرة.": "Oscar for Real Estate Marketing.. Pioneers in providing luxurious residential solutions.",
+          "33 شارع قصر النيل – وسط البلد – القاهرة.": "33 Qasr El Nil Street – Downtown – Cairo.",
+            "مدارس للبيع وتقييم عقاري تعليمي | شركة أوسكار العقارية": "Schools for Sale & Educational Real Estate Evaluation | Oscar Real Estate",
+  "شركة أوسكار متخصصة في بيع وشراء وتأجير المدارس والمنشآت التعليمية. تقييم عقاري تعليمي احترافي وحلول عقارية مدروسة للمستثمرين والمعلمين بالقاهرة.": "Oscar specializes in buying, selling, and renting schools and educational facilities. Professional educational real estate evaluation and strategic real estate solutions for investors and educators in Cairo.",
+  "مدارس للبيع، شراء مدرسة، تقييم مدارس، منشآت تعليمية للبيع، استثمار تعليمي مصر، أوسكار للتسويق العقاري، مدرسة دولية للبيع": "schools for sale, buy school, school evaluation, educational facilities for sale, educational investment Egypt, Oscar Real Estate Marketing, international school for sale",
+  "مدارس للبيع - حلول عقارية للمنشآت التعليمية | أوسكار": "Schools for Sale - Real Estate Solutions for Educational Facilities | Oscar",
+  "شريكك الموثوق في نجاح واستقرار مشروعك التعليمي. خبرة دقيقة في تقييم وتسويق المدارس بجميع أنواعها.": "Your trusted partner in the success and stability of your educational project. Precise expertise in evaluating and marketing all types of schools.",
+  "الوساطة العقارية التعليمية": "Educational Real Estate Mediation",
+  "مدارس للبيع": "Schools for Sale",
+  "وتقييم عقاري تعليمي": "and Educational Real Estate Evaluation",
+  "كل عقار تعليمي لا يتم التعامل معه كمبنى فقط، بل كمشروع تعليمي متكامل له رسالة واستمرارية": "Every educational property is not treated as just a building, but as a complete educational project with a message and continuity",
+  "لماذا يثق المعلمون وأصحاب المدارس في أوسكار؟": "Why do teachers and school owners trust Oscar?",
+  "شركة أوسكار للتسويق والتقييم العقاري هي واحدة من الأسماء الرائدة في مجال الوساطة العقارية المتخصصة في المنشآت التعليمية، حيث تقدم حلولًا احترافية لبيع وشراء وتأجير المدارس بجميع أنواعها.": "Oscar Real Estate Marketing and Evaluation Company is one of the leading names in specialized real estate brokerage for educational facilities, offering professional solutions for buying, selling, and renting schools of all types.",
+  "استطاعت أوسكار أن تكسب ثقة المعلمين، أصحاب المدارس، والمستثمرين بفضل فهمها العميق لطبيعة العملية التعليمية ومتطلباتها الخاصة، مراعيةً الاشتراطات التعليمية والقانونية لكل نوع تعليم سواء كان دوليًا، لغات، أو خاصًا.": "Oscar has gained the trust of teachers, school owners, and investors thanks to its deep understanding of the nature of the educational process and its special requirements, considering the educational and legal requirements for each type of education whether international, language, or private.",
+  "شفافية مطلقة": "Absolute Transparency",
+  "خبرة قانونية": "Legal Expertise",
+  "تقييم تعليمي دقيق": "Accurate Educational Evaluation",
+  "تعتمد الشركة على خبرة دقيقة في تقييم المدارس مع مراعاة الرسالة التعليمية والجدوى الاستثمارية للمشروع.": "The company relies on precise expertise in school evaluation while considering the educational mission and investment feasibility of the project.",
+  "اختيار المواقع": "Location Selection",
+  "نساعدك في اختيار الموقع الأنسب الذي يضمن بيئة تعليمية مستقرة ويساعد المعلمين على أداء رسالتهم.": "We help you choose the most suitable location that ensures a stable educational environment and helps teachers perform their mission.",
+  "شريك في النجاح": "Success Partner",
+  "نعتبر أنفسنا شريكًا في استقرار المشروعات التعليمية، من التقييم والتسويق وحتى إتمام التعاقدات بكل دقة.": "We consider ourselves partners in the stability of educational projects, from evaluation and marketing to completing contracts with precision.",
+  "رسالتنا تجاه قطاع التعليم": "Our Message to the Education Sector",
+  "تسعى أوسكار لترسيخ مكانتها كخيار أول لكل من يبحث عن احترافية حقيقية في سوق العقارات التعليمية، وبناء علاقات طويلة الأمد تقوم على الثقة والاحترام المتبادل.": "Oscar seeks to establish its position as the first choice for anyone looking for real professionalism in the educational real estate market, and to build long-term relationships based on mutual trust and respect.",
+  "ابدأ استثمارك التعليمي الآن": "Start Your Educational Investment Now",
+    "مستشفيات للبيع والتقييم العقاري الطبي | شركة أوسكار العقارية": "Hospitals for Sale and Medical Real Estate Evaluation | Oscar Real Estate Company",
+  "شركة أوسكار المتخصصة في تسويق وتقييم المستشفيات والمنشآت الطبية بالقاهرة. نوفر حلولاً عقارية دقيقة للأطباء والمستثمرين مع ضمان الخصوصية والاحترافية.": "Oscar Company specializes in marketing and evaluating hospitals and medical facilities in Cairo. We provide precise real estate solutions for doctors and investors while ensuring privacy and professionalism.",
+  "مستشفيات للبيع، عقارات طبية، تقييم منشآت طبية، شراء مستشفى في مصر، تسويق عقاري طبي، أوسكار للعقارات الطبية، استثمار طبي القاهرة": "hospitals for sale, medical real estate, medical facility evaluation, buying a hospital in Egypt, medical real estate marketing, Oscar for medical real estate, medical investment Cairo",
+  "مستشفيات للبيع في مصر - شريك الأطباء الموثوق | أوسكار": "Hospitals for Sale in Egypt - Trusted Partner of Doctors | Oscar",
+  "نحن في أوسكار نبني علاقات قائمة على الوضوح والشفافية لضمان نجاح مشروعك الطبي. اكتشف خدماتنا في بيع وتقييم المستشفيات.": "At Oscar, we build relationships based on clarity and transparency to ensure the success of your medical project. Discover our services in selling and evaluating hospitals.",
+  "القطاع الطبي العقاري": "Medical Real Estate Sector",
+  "مستشفيات": "Hospitals",
+  "للبيع": "for Sale",
+  "وتقييم عقارى متخصص": "and Specialized Real Estate Evaluation",
+  "نحن شريكك الموثوق الذي يفهم احتياجاتك الطبية، نوفر لك الأمان والخصوصية في كافة تعاملاتك العقارية داخل السوق الطبي المصري.": "We are your trusted partner who understands your medical needs, providing you with security and privacy in all your real estate transactions within the Egyptian medical market.",
+  "عن أوسكار للتسويق العقاري في القطاع الطبي": "About Oscar Real Estate Marketing in the Medical Sector",
+  "شركة أوسكار للتسويق والتقييم العقاري بنت اسمها على أساس الثقة والمصداقية، ونجحت في أن تكون شريكًا موثوقًا لعدد كبير من الأطباء والمستثمرين في القطاع الطبي.": "Oscar Real Estate Marketing and Evaluation Company built its name on trust and credibility, successfully becoming a trusted partner for a large number of doctors and investors in the medical sector.",
+  "ثقة عملائنا لم تأتِ من فراغ، بل كانت نتيجة التزام حقيقي بفهم احتياجات المجال الطبي وتقديم حلول عقارية دقيقة تناسب طبيعة كل نشاط.": "Our clients' trust didn't come out of nowhere, but was the result of a genuine commitment to understanding the needs of the medical field and providing precise real estate solutions suitable for the nature of each activity.",
+  "الخصوصية والاحترافية": "Privacy and Professionalism",
+  "نحرص في أوسكار على التعامل مع كل ملف بمنتهى الخصوصية والاحترافية، بداية من اختيار الموقع المناسب وحتى إتمام العمليات بسلاسة وأمان.": "At Oscar, we ensure handling each file with utmost privacy and professionalism, from selecting the appropriate location to completing operations smoothly and safely.",
+  "تقييم عقاري عادل": "Fair Real Estate Evaluation",
+  "نقوم بتقييم العقار بشكل عادل تماماً، هذا النهج جعلنا محل ثقة الأطباء الذين يعتمدون علينا في قراراتهم الاستثمارية والمهنية.": "We evaluate the property completely fairly, this approach has made us a trusted source for doctors who rely on us in their investment and professional decisions.",
+  "حلول عقارية دقيقة": "Precise Real Estate Solutions",
+  "نقدم حلولاً تناسب طبيعة كل نشاط طبي، ونعتبر نجاح الطبيب واستقرار مشروعه الطبي جزءًا لا يتجزأ من نجاحنا الشخصي.": "We provide solutions that suit the nature of each medical activity, and we consider the success of the doctor and the stability of their medical project as an integral part of our personal success.",
+  "أوسكار العقارية.. الاسم المرتبط بالثقة والخبرة": "Oscar Real Estate... The Name Associated with Trust and Experience",
+  "نعمل دائمًا على بناء علاقات طويلة الأمد مع عملائنا، قائمة على الوضوح والشفافية. لقد أصبحنا اسماً يرتبط بالالتزام داخل السوق العقاري الطبي المصري.": "We always work on building long-term relationships with our clients, based on clarity and transparency. We have become a name associated with commitment within the Egyptian medical real estate market.",
+  "تواصل معنا الآن": "Contact Us Now",
+  "مدارس للبيع ":"Schools for Sale ",
+  "مستشفيات للبيع" : "Hospitals for Sale",
+  "نحن شريكك الموثوق في قلب القاهرة، خبره اكثر من 30 عاما نقدم خدمات عقارية احترافية وشفافة تلبي طموحاتك في البيع والشراء والإيجار.":"We are your trusted partner in the heart of Cairo, with over 30 years of experience. We provide professional and transparent real estate services that meet your ambitions in selling, buying, and renting.",
+  "للتسويق والتقييم العقاري":"For Real Estate Marketing and Evaluation",
+  "أوسكار للتسويق والتقييم العقاري.. رائدون في تقديم الحلول السكنية الفاخرة.":"Oscar for Real Estate Marketing & Valuation… Pioneers in Delivering Luxury Residential Solutions."
+
+
+}
