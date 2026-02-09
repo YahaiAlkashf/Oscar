@@ -175,7 +175,7 @@ const PropertyCard = ({ item }) => {
 
                     <div className="flex gap-3 mt-4" dir="ltr">
                         <a
-                            href={`https://wa.me/${item.whatsApp_number}`}
+                            href={`https://wa.me/+2${item.whatsApp_number}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex-1 flex items-center justify-center gap-2 bg-green-500/10 hover:bg-green-500 text-green-600 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
@@ -185,7 +185,7 @@ const PropertyCard = ({ item }) => {
                         </a>
 
                         <a
-                            href={`tel:${item.phone_number}`}
+                            href={`tel:+2${item.phone_number}`}
                             className="flex-1 flex items-center justify-center gap-2 bg-[#A86B06]/10 hover:bg-[#A86B06] text-[#A86B06] hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
                         >
                             <PhoneIcon className="w-5 h-5" />
