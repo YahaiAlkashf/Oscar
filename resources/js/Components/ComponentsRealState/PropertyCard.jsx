@@ -40,6 +40,27 @@ const PropertyCard = ({ item }) => {
         return language === 'en' && enField ? enField : arField;
     };
 
+    const preparePhoneNumber = (phoneNumber) => {
+        if (!phoneNumber) return '';
+
+        let cleaned = phoneNumber.toString().replace(/\D/g, '');
+
+        if (cleaned.startsWith('0')) {
+            cleaned = '20' + cleaned.substring(1);
+        }
+        else if (!cleaned.startsWith('+') && !cleaned.startsWith('20')) {
+            cleaned = '20' + cleaned;
+        }
+
+        return cleaned;
+    };
+
+    const phoneNumber = item.phone_number || item.whatsapp_number || '';
+    const whatsappNumber = item.whatsapp_number || item.phone_number || '';
+
+    const preparedPhone = preparePhoneNumber(phoneNumber);
+    const preparedWhatsApp = preparePhoneNumber(whatsappNumber);
+
     const propertyName = getLocalizedField(item.name, item.name_en);
     const propertyView = getLocalizedField(item.view, item.view_en);
     const propertyFinishingType = getLocalizedField(item.finishing_type, item.finishing_type_en);
@@ -174,23 +195,27 @@ const PropertyCard = ({ item }) => {
                     </div>
 
                     <div className="flex gap-3 mt-4" dir="ltr">
-                        <a
-                            href={`https://wa.me/+2${item.whatsApp_number}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 flex items-center justify-center gap-2 bg-green-500/10 hover:bg-green-500 text-green-600 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
-                        >
-                            <ChatBubbleLeftRightIcon className="w-5 h-5" />
-                            <span>{t("واتساب")}</span>
-                        </a>
+                        {preparedWhatsApp && (
+                            <a
+                                href={`https://wa.me/${preparedWhatsApp}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 flex items-center justify-center gap-2 bg-green-500/10 hover:bg-green-500 text-green-600 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
+                            >
+                                <ChatBubbleLeftRightIcon className="w-5 h-5" />
+                                <span>{t("واتساب")}</span>
+                            </a>
+                        )}
 
-                        <a
-                            href={`tel:+2${item.phone_number}`}
-                            className="flex-1 flex items-center justify-center gap-2 bg-[#A86B06]/10 hover:bg-[#A86B06] text-[#A86B06] hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
-                        >
-                            <PhoneIcon className="w-5 h-5" />
-                            <span>{t("اتصال")}</span>
-                        </a>
+                        {preparedPhone && (
+                            <a
+                                href={`tel:+${preparedPhone}`}
+                                className="flex-1 flex items-center justify-center gap-2 bg-[#A86B06]/10 hover:bg-[#A86B06] text-[#A86B06] hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
+                            >
+                                <PhoneIcon className="w-5 h-5" />
+                                <span>{t("اتصال")}</span>
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>

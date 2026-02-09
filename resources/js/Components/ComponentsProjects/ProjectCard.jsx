@@ -22,6 +22,32 @@ const ProjectCard = ({ item }) => {
         return language === 'en' && enField ? enField : arField;
     };
 
+    // دالة لتنظيف وتجهيز الرقم للواتساب والاتصال
+    const preparePhoneNumber = (phoneNumber) => {
+        if (!phoneNumber) return '';
+
+        // تنظيف الرقم من أي أحرف غير رقمية
+        let cleaned = phoneNumber.toString().replace(/\D/g, '');
+
+        // إذا بدأ بـ 0، استبدله بـ 20+ (مصر)
+        if (cleaned.startsWith('0')) {
+            cleaned = '20' + cleaned.substring(1);
+        }
+        // إذا لم يكن فيه رمز دولة، أضف 20+ (مصر)
+        else if (!cleaned.startsWith('+') && !cleaned.startsWith('20')) {
+            cleaned = '20' + cleaned;
+        }
+
+        return cleaned;
+    };
+
+    // الحصول على رقم الهاتف من item (يجب أن يكون في بياناتك)
+    const phoneNumber = item.phone_number || item.whatsapp_number || '';
+    const whatsappNumber = item.whatsapp_number || item.phone_number || '';
+
+    const preparedPhone = preparePhoneNumber(phoneNumber);
+    const preparedWhatsApp = preparePhoneNumber(whatsappNumber);
+
     return (
         <div className="group bg-white dark:bg-[#111111] rounded-[2rem] overflow-hidden border border-gray-100 dark:border-[#1A1A1A] hover:shadow-2xl transition-all duration-500">
             <div className="relative h-64 overflow-hidden">
@@ -79,23 +105,27 @@ const ProjectCard = ({ item }) => {
                 </div>
 
                 <div className="flex gap-3 mt-4" dir='ltr'>
-                    <a
-                        href={`https://wa.me/+2${item.whatsApp_number}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center gap-2 bg-green-500/10 hover:bg-green-500 text-green-600 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
-                    >
-                        <ChatBubbleLeftRightIcon className="w-5 h-5" />
-                        <span>{t("واتساب")}</span>
-                    </a>
+                    {preparedWhatsApp && (
+                        <a
+                            href={`https://wa.me/${preparedWhatsApp}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 flex items-center justify-center gap-2 bg-green-500/10 hover:bg-green-500 text-green-600 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
+                        >
+                            <ChatBubbleLeftRightIcon className="w-5 h-5" />
+                            <span>{t("واتساب")}</span>
+                        </a>
+                    )}
 
-                    <a
-                        href={`tel:+2${item.phone_number}`}
-                        className="flex-1 flex items-center justify-center gap-2 bg-[#A86B06]/10 hover:bg-[#A86B06] text-[#A86B06] hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
-                    >
-                        <PhoneIcon className="w-5 h-5" />
-                        <span>{t("اتصال")}</span>
-                    </a>
+                    {preparedPhone && (
+                        <a
+                            href={`tel:+${preparedPhone}`}
+                            className="flex-1 flex items-center justify-center gap-2 bg-[#A86B06]/10 hover:bg-[#A86B06] text-[#A86B06] hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
+                        >
+                            <PhoneIcon className="w-5 h-5" />
+                            <span>{t("اتصال")}</span>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

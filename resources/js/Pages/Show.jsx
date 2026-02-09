@@ -26,6 +26,32 @@ export default function PropertyShow() {
         return language === 'en' && enField ? enField : arField;
     };
 
+    // دالة لتنظيف وتجهيز الرقم للواتساب والاتصال
+    const preparePhoneNumber = (phoneNumber) => {
+        if (!phoneNumber) return '';
+
+        // تنظيف الرقم من أي أحرف غير رقمية
+        let cleaned = phoneNumber.toString().replace(/\D/g, '');
+
+        // إذا بدأ بـ 0، استبدله بـ 20+ (مصر)
+        if (cleaned.startsWith('0')) {
+            cleaned = '20' + cleaned.substring(1);
+        }
+        // إذا لم يكن فيه رمز دولة، أضف 20+ (مصر)
+        else if (!cleaned.startsWith('+') && !cleaned.startsWith('20')) {
+            cleaned = '20' + cleaned;
+        }
+
+        return cleaned;
+    };
+
+    // الحصول على أرقام الهواتف بعد التنظيف
+    const phoneNumber = property?.phone_number || property?.whatsapp_number || '';
+    const whatsappNumber = property?.whatsapp_number || property?.phone_number || '';
+
+    const preparedPhone = preparePhoneNumber(phoneNumber);
+    const preparedWhatsApp = preparePhoneNumber(whatsappNumber);
+
     const fetchProperty = async () => {
         try {
             const response = await axios.get(`/real-estate/${propertyId}`);
@@ -288,15 +314,37 @@ export default function PropertyShow() {
                                     </div>
 
                                     <div className="space-y-3">
-                                        <a href={`tel:${property.phone_number}`} className="flex items-center justify-center gap-3 w-full bg-[#111] dark:bg-white dark:text-black text-white py-4 rounded-2xl font-bold shadow-lg shadow-black/10 hover:bg-[#A86B06] hover:text-white transition-all">
-                                            <PhoneIcon className="w-5 h-5" /> {property.phone_number || t("اتصل الآن")}
-                                        </a>
-                                        <a href={`https://wa.me/${property.whatsapp_number}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold shadow-lg shadow-green-600/20 hover:scale-[1.02] transition-all">
-                                            <ChatBubbleLeftRightIcon className="w-6 h-6" /> {property.whatsapp_number || t("واتساب")}
-                                        </a>
-                                        <a href={`mailto:${property.email}`} className="flex items-center justify-center gap-3 w-full border-2 border-[#A86B06] text-[#A86B06] py-4 rounded-2xl font-bold hover:bg-[#A86B06] hover:text-white transition-all">
-                                            <EnvelopeIcon className="w-6 h-6" /> {property.email || t("مراسلة عبر الإيميل")}
-                                        </a>
+                                        {preparedPhone && (
+                                            <a
+                                                href={`tel:+${preparedPhone}`}
+                                                className="flex items-center justify-center gap-3 w-full bg-[#111] dark:bg-white dark:text-black text-white py-4 rounded-2xl font-bold shadow-lg shadow-black/10 hover:bg-[#A86B06] hover:text-white transition-all"
+                                            >
+                                                <PhoneIcon className="w-5 h-5" />
+                                                {property.phone_number || t("اتصل الآن")}
+                                            </a>
+                                        )}
+
+                                        {preparedWhatsApp && (
+                                            <a
+                                                href={`https://wa.me/${preparedWhatsApp}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold shadow-lg shadow-green-600/20 hover:scale-[1.02] transition-all"
+                                            >
+                                                <ChatBubbleLeftRightIcon className="w-6 h-6" />
+                                                {property.whatsapp_number || t("واتساب")}
+                                            </a>
+                                        )}
+
+                                        {property.email && (
+                                            <a
+                                                href={`mailto:${property.email}`}
+                                                className="flex items-center justify-center gap-3 w-full border-2 border-[#A86B06] text-[#A86B06] py-4 rounded-2xl font-bold hover:bg-[#A86B06] hover:text-white transition-all"
+                                            >
+                                                <EnvelopeIcon className="w-6 h-6" />
+                                                {property.email || t("مراسلة عبر الإيميل")}
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
 
@@ -312,11 +360,15 @@ export default function PropertyShow() {
                                         </div>
                                         <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-white/5 rounded-xl">
                                             <span className="text-gray-500 text-sm">{t("رقم الهاتف:")}</span>
-                                            <span className="font-semibold dark:text-white">{property.phone_number || t("غير متوفر")}</span>
+                                            <span className="font-semibold dark:text-white">
+                                                {property.phone_number || t("غير متوفر")}
+                                            </span>
                                         </div>
                                         <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-white/5 rounded-xl">
                                             <span className="text-gray-500 text-sm">{t("واتساب:")}</span>
-                                            <span className="font-semibold text-green-500">{property.whatsapp_number || t("غير متوفر")}</span>
+                                            <span className="font-semibold text-green-500">
+                                                {property.whatsapp_number || t("غير متوفر")}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>

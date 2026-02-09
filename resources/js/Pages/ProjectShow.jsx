@@ -28,6 +28,32 @@ export default function ProjectShow() {
         return language === 'en' && enField ? enField : arField;
     };
 
+    // دالة لتنظيف وتجهيز الرقم للواتساب والاتصال
+    const preparePhoneNumber = (phoneNumber) => {
+        if (!phoneNumber) return '';
+
+        // تنظيف الرقم من أي أحرف غير رقمية
+        let cleaned = phoneNumber.toString().replace(/\D/g, '');
+
+        // إذا بدأ بـ 0، استبدله بـ 20+ (مصر)
+        if (cleaned.startsWith('0')) {
+            cleaned = '20' + cleaned.substring(1);
+        }
+        // إذا لم يكن فيه رمز دولة، أضف 20+ (مصر)
+        else if (!cleaned.startsWith('+') && !cleaned.startsWith('20')) {
+            cleaned = '20' + cleaned;
+        }
+
+        return cleaned;
+    };
+
+    // الحصول على أرقام الهواتف بعد التنظيف
+    const phoneNumber = project?.phone_number || project?.whatsapp_number || '';
+    const whatsappNumber = project?.whatsApp_number || project?.whatsapp_number || project?.phone_number || '';
+
+    const preparedPhone = preparePhoneNumber(phoneNumber);
+    const preparedWhatsApp = preparePhoneNumber(whatsappNumber);
+
     const fetchProject = async () => {
         try {
             const response = await axios.get(`/projects/${projectId}`);
@@ -292,15 +318,37 @@ export default function ProjectShow() {
                                     </div>
 
                                     <div className="space-y-3">
-                                        <a href={`tel:${project.phone_number}`} className="flex items-center justify-center gap-3 w-full bg-[#111] dark:bg-white dark:text-black text-white py-4 rounded-2xl font-bold shadow-lg shadow-black/10 hover:bg-[#A86B06] hover:text-white transition-all">
-                                            <PhoneIcon className="w-5 h-5" /> {project.phone_number || t("اتصل الآن")}
-                                        </a>
-                                        <a href={`https://wa.me/${project.whatsApp_number}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold shadow-lg shadow-green-600/20 hover:scale-[1.02] transition-all">
-                                            <ChatBubbleLeftRightIcon className="w-6 h-6" /> {project.whatsApp_number || t("واتساب")}
-                                        </a>
-                                        <a href={`mailto:${project.email}`} className="flex items-center justify-center gap-3 w-full border-2 border-[#A86B06] text-[#A86B06] py-4 rounded-2xl font-bold hover:bg-[#A86B06] hover:text-white transition-all">
-                                            <EnvelopeIcon className="w-6 h-6" /> {project.email || t("مراسلة عبر الإيميل")}
-                                        </a>
+                                        {preparedPhone && (
+                                            <a
+                                                href={`tel:+${preparedPhone}`}
+                                                className="flex items-center justify-center gap-3 w-full bg-[#111] dark:bg-white dark:text-black text-white py-4 rounded-2xl font-bold shadow-lg shadow-black/10 hover:bg-[#A86B06] hover:text-white transition-all"
+                                            >
+                                                <PhoneIcon className="w-5 h-5" />
+                                                {project.phone_number || t("اتصل الآن")}
+                                            </a>
+                                        )}
+
+                                        {preparedWhatsApp && (
+                                            <a
+                                                href={`https://wa.me/${preparedWhatsApp}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold shadow-lg shadow-green-600/20 hover:scale-[1.02] transition-all"
+                                            >
+                                                <ChatBubbleLeftRightIcon className="w-6 h-6" />
+                                                {project.whatsApp_number || project.whatsapp_number || t("واتساب")}
+                                            </a>
+                                        )}
+
+                                        {project.email && (
+                                            <a
+                                                href={`mailto:${project.email}`}
+                                                className="flex items-center justify-center gap-3 w-full border-2 border-[#A86B06] text-[#A86B06] py-4 rounded-2xl font-bold hover:bg-[#A86B06] hover:text-white transition-all"
+                                            >
+                                                <EnvelopeIcon className="w-6 h-6" />
+                                                {project.email || t("مراسلة عبر الإيميل")}
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
 
@@ -320,7 +368,7 @@ export default function ProjectShow() {
                                         </div>
                                         <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-white/5 rounded-xl">
                                             <span className="text-gray-500 text-sm">{t("واتساب:")}</span>
-                                            <span className="font-semibold text-green-500">{project.whatsApp_number || t("غير متوفر")}</span>
+                                            <span className="font-semibold text-green-500">{project.whatsApp_number || project.whatsapp_number || t("غير متوفر")}</span>
                                         </div>
                                         <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-white/5 rounded-xl">
                                             <span className="text-gray-500 text-sm">{t("الموقع:")}</span>
@@ -374,14 +422,17 @@ export default function ProjectShow() {
     );
 }
 
-const DataRow = ({ label, value, isOdd = false, highlight = false, icon }) => (
-    <div className={`flex justify-between items-center p-6 transition-colors ${isOdd ? 'bg-gray-50/50 dark:bg-white/[0.02]' : 'bg-white dark:bg-transparent'}`}>
-        <div className="flex items-center gap-3">
-            {icon && <div className="text-gray-400">{icon}</div>}
-            <span className="text-gray-500 dark:text-gray-400 font-bold text-base">{label}</span>
+const DataRow = ({ label, value, isOdd = false, highlight = false, icon }) => {
+    const { t } = useTranslation();
+    return (
+        <div className={`flex justify-between items-center p-6 transition-colors ${isOdd ? 'bg-gray-50/50 dark:bg-white/[0.02]' : 'bg-white dark:bg-transparent'}`}>
+            <div className="flex items-center gap-3">
+                {icon && <div className="text-gray-400">{icon}</div>}
+                <span className="text-gray-500 dark:text-gray-400 font-bold text-base">{label}</span>
+            </div>
+            <span className={`font-black text-right ${highlight ? 'text-[#A86B06] text-2xl' : 'text-gray-900 dark:text-white'}`}>
+                {value || t("غير محدد")}
+            </span>
         </div>
-        <span className={`font-black text-right ${highlight ? 'text-[#A86B06] text-2xl' : 'text-gray-900 dark:text-white'}`}>
-            {value || t("غير محدد")}
-        </span>
-    </div>
-);
+    );
+};
