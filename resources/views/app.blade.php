@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="google-site-verification" content="03bEbgjU4pAfuLWMgSI0W-l5t9Fkv49LR20SKPJj_f8" />
     <title>أوسكار للتسويق والتقييم العقاري</title>
     <meta name="description" content="أوسكار للتسويق والتقييم العقاري: شريكك الموثوق لخدمات البيع والشراء والتأجير . نقدم تسويقًا احترافيًا واستشارات دقيقة لجميع العقارات السكنية والتجارية والإدارية والتقييم العقارى." />
     <meta name="keywords" content="أوسكار للتسويق والتقييم العقاري, عقارات القاهرة, بيع شقق القاهرة, تأجير محلات تجارية, تسويق عقاري محترف, استشارات عقارية, شقق للبيع وسط البلد, عقارات تجارية للايجار, شركة عقارات في القاهرة" />
